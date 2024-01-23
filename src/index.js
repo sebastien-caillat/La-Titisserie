@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Header from './components/Header'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import Realisations from './pages/Realisations'
 import Prestations from './pages/Prestations'
 import Error from './pages/Error'
@@ -22,7 +22,7 @@ root.render(
         <Route path='prestations' element={<Prestations />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   </React.StrictMode>
-);
+);  
