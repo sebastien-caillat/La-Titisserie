@@ -4,7 +4,7 @@ import colors from "./colors";
 
 const StyledGlobalStyle = createGlobalStyle`
     * {
-        font-family: 'League Spartan', serif, sans-serif;
+        font-family: 'Varela Round', sans-serif;
     }
 
     body {
