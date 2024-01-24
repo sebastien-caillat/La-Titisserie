@@ -11,7 +11,6 @@ const Box = styled.div`
     background: #E6A4B4;
     position: absolute;
     width: 100%;
-    bottom: 0;
 `;
  
 const FooterContainer = styled.div`

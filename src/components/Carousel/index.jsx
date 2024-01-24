@@ -1,36 +1,54 @@
-// import React from "react";
-// import { cardDetails } from "./carousel-config";
-// import CarouselItem from "./CarouselItem";
+import React from "react";
+import styled from "styled-components";
 
-// export default function CarouselItem({ imgUrl, imgTitle }) {
-//     return (
-//       <div className="carousel-card">
-//         <img src={imgUrl} alt={imgTitle}></img>
-//       </div>
-//     );
-// }
+const StyledCarouselItem = styled.div`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+`
+const StyledCarousel = styled.div`
+    overflow: hidden;
+    width: 100%;
+    margin-top: -40px;
+`
+const StyledInner = styled.div`
+    white-space: nowrap;
+    transition: transform 0.3s;
+`
 
-// export default function AutoplayCarousel() {
-//     return (
-//       <div className="carousel-container">
-//         <div className="carousel-track">
-//           {Object.keys(cardDetails).map((detailKey) => {
-//             return (
-//               <CarouselItem
-//                 imgUrl={cardDetails[detailKey].imgUrl}
-//                 imgTitle={cardDetails[detailKey].title}
-//               ></CarouselItem>
-//             );
-//           })}
-//           {Object.keys(cardDetails).map((detailKey) => {
-//             return (
-//               <CarouselItem
-//                 imgUrl={cardDetails[detailKey].imgUrl}
-//                 imgTitle={cardDetails[detailKey].title}
-//               ></CarouselItem>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     );
-//   }
+export const CarouselItem = ({ children, width }) => {
+    return (
+        <StyledCarouselItem style={{ width: width }}>
+            {children}
+        </StyledCarouselItem>
+    )
+}
+
+function Carousel({ children }) {
+    
+    // const [activeIndex, setActiveIndex] = useState(0);
+
+    // const updateIndex = (newIndex) => {
+    
+    //     if(newIndex < 0) {
+    //         newIndex = React.Children.count(children) -1;
+    //     } else if (newIndex > React.Children.count(children) -1) {
+    //         newIndex = 0;
+    //     } 
+
+    //     setActiveIndex(newIndex);
+    // }
+
+    return(
+        <StyledCarousel>
+            <StyledInner>
+                {React.Children.map(children, (child, index) => {
+                    return React.cloneElement(child, { width: '100%' });
+                })}
+            </StyledInner>
+        </StyledCarousel>
+    )
+}
+
+export default Carousel
