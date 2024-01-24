@@ -24,7 +24,7 @@ import { StyledLink } from '../../utils/style/Atoms';
 export default function Header() {
     return(
         <HeaderContainer>
-            <LogoTitle>Tristan Caillat</LogoTitle> 
+            <LogoTitle>La Titisserie</LogoTitle> 
             <NavBar>
                 <StyledLink to="/">ACCUEIL</StyledLink>
                 <StyledLink to="realisations">REALISATIONS</StyledLink>

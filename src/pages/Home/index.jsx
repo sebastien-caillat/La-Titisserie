@@ -11,7 +11,7 @@ const StyledTitle = styled.h1`
 export default function Home() {
   return(
     <GlobalContainer>
-      <StyledTitle>La Titisserie</StyledTitle>
+      <StyledTitle>Tristan Caillat</StyledTitle>
     </GlobalContainer>
   )
 }
