@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Carousel from "../../components/Carousel";
 import { CarouselItem } from "../../components/Carousel";
-import { YoutubeEmbed } from '../../assets/YoutubeEmbeb';
+import { YoutubeEmbed } from '../../assets/YoutubeEmbed';
 
 const GlobalContainer = styled.div`
   width: 100%;
