@@ -32,6 +32,9 @@ const Column = styled.div`
 const Row = styled.div`
     display: flex;
     justify-content: space-between;
+    @media(max-width: 1280px) {
+        justify-content: space-around;
+    }
 `;
 
 const StyledFooterTitle = styled.h3`

@@ -15,6 +15,9 @@ const StyledCarouselItemImg = styled.img`
     height: 500px;
     object-fit: cover;
     width: 100%;
+    @media(max-width: 1280px) {
+      height: 350px;
+    }
 `
 
 const TitleCenter = styled.div`
@@ -23,7 +26,8 @@ const TitleCenter = styled.div`
 `
 
 const TitleBox = styled.div`
-  width: 22%;
+  width: auto;
+  height: auto;
   display: flex;
   position: absolute;
   padding: 0% 2% 0% 2%;
@@ -31,6 +35,9 @@ const TitleBox = styled.div`
   flex-direction: column;
   background-color: #F5EEE6;
   border-radius: 10px;
+  @media(max-width: 1280px) {
+    top: 490px;
+  }
 `
 
 const MainTitle = styled.h1`
@@ -52,33 +59,53 @@ const MainTitleSubtext = styled.p`
   display: flex;
   justify-content: center;
   font-size: 20px;
+  text-align: center;
 `
 
 const InfosContainer = styled.div`
-  height: 700px;
+  height: auto;
   display: flex;
+  margin: 10% 0% 10% 0%;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 1280px) {
+    flex-direction: column;
+  }
 `
 
 const PresentationBox = styled.div`
   width: 25%;
-  height: 350px;
+  height: auto;
   background-color: #F5EEE6;
   border: 1px solid black;
+  border-radius: 25px;
   margin-left: 5%;
+  padding: 1%;
+  @media(max-width: 1280px) {
+    width: 80%;
+    margin: 0% 0% 10% 0%;
+  }
 `
 
 const HowToOrderBox = styled.div`
   width: 25%;
-  height: 350px;
+  height: auto;
   background-color: #F5EEE6;
   border: 1px solid black;
+  border-radius: 25px;
   margin-right: 5%;
+  padding: 1%;
+  @media(max-width: 1280px) {
+    width: 80%;
+    margin: 10% 0% 0% 0%;
+  }
 `
 
 const YoutubeVideo = styled.div`
   width: 30%;
+  @media(max-width: 1280px) {
+    width: 80%;
+  }
 `
 
 const illustrations = [
@@ -130,12 +157,14 @@ export default function Home() {
 
         <PresentationBox>
           <h2>Qui-suis-je ?</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </PresentationBox>
         <YoutubeVideo>
-        <YoutubeEmbed embedId="2yJgwwDcgV8?si=g_Z7qB_ijtGRKmak" />
+        <YoutubeEmbed embedId="-HtBhn-XSxw?si=ytNNl_3ZRJ06Cd9y" />
         </YoutubeVideo>       
         <HowToOrderBox>
           <h2>Passer commande</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </HowToOrderBox>
 
       </InfosContainer>
