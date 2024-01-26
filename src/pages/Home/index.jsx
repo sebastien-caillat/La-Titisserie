@@ -18,6 +18,9 @@ const StyledCarouselItemImg = styled.img`
     @media(max-width: 1280px) {
       height: 350px;
     }
+    @media(max-width: 768px) {
+      height: 200px;
+    }
 `
 
 const TitleCenter = styled.div`
@@ -38,12 +41,19 @@ const TitleBox = styled.div`
   @media(max-width: 1280px) {
     top: 490px;
   }
+  @media(max-width: 768px) {
+    width: 90%;
+    top: 400px;
+  }
 `
 
 const MainTitle = styled.h1`
   display: flex;
   justify-content: center;
   font-size: 45px;
+  @media(max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
 const StyledHr = styled.hr`
@@ -53,6 +63,9 @@ const StyledHr = styled.hr`
   background-color: #E6A4B4;
   border: none;
   margin-top: -10px;
+  @media(max-width: 768px) {
+    margin-top: 0px;
+  }
 `
 
 const MainTitleSubtext = styled.p`
@@ -71,6 +84,9 @@ const InfosContainer = styled.div`
   @media(max-width: 1280px) {
     flex-direction: column;
   }
+  @media(max-width: 768px) {
+    margin: 0% 0% 15% 0%;
+  }
 `
 
 const PresentationBox = styled.div`
@@ -84,6 +100,10 @@ const PresentationBox = styled.div`
   @media(max-width: 1280px) {
     width: 80%;
     margin: 0% 0% 10% 0%;
+  }
+  @media(max-width: 768px) {
+    width: 90%;
+    border-radius: 15px;
   }
 `
 
@@ -99,12 +119,18 @@ const HowToOrderBox = styled.div`
     width: 80%;
     margin: 10% 0% 0% 0%;
   }
+  @media(max-width: 768px) {
+    width: 90%;
+  }
 `
 
 const YoutubeVideo = styled.div`
   width: 30%;
   @media(max-width: 1280px) {
     width: 80%;
+  }
+  @media(max-width: 768px) {
+    width: 90%;
   }
 `
 

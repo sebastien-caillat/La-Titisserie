@@ -27,6 +27,11 @@ import { StyledLink } from '../../utils/style/Atoms';
         @media(max-width: 1280px) {
             margin-top: 0px;                    
         }
+        @media(max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -40px;
+        }
     `
 
 export default function Header() {
