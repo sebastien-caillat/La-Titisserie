@@ -16,6 +16,14 @@ const StyledGlobalStyle = createGlobalStyle`
         overflow: auto;
     }
 
+    h1, h2 {
+        font-family: 'Alex Brush', cursive;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
     p {
         font-size: 18px;
         text-align: justify;

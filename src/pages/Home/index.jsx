@@ -93,10 +93,10 @@ const PresentationBox = styled.div`
   width: 25%;
   height: auto;
   background-color: #F5EEE6;
-  border: 1px solid black;
   border-radius: 25px;
   margin-left: 5%;
   padding: 1%;
+  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     width: 80%;
     margin: 0% 0% 10% 0%;
@@ -104,6 +104,7 @@ const PresentationBox = styled.div`
   @media(max-width: 768px) {
     width: 90%;
     border-radius: 15px;
+    box-shadow: 5px 5px 2px 1px #E6A4B4;
   }
 `
 
@@ -111,16 +112,18 @@ const HowToOrderBox = styled.div`
   width: 25%;
   height: auto;
   background-color: #F5EEE6;
-  border: 1px solid black;
   border-radius: 25px;
   margin-right: 5%;
   padding: 1%;
+  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     width: 80%;
     margin: 10% 0% 0% 0%;
   }
   @media(max-width: 768px) {
     width: 90%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px 1px #E6A4B4;
   }
 `
 
@@ -172,7 +175,7 @@ export default function Home() {
       <TitleCenter>
 
         <TitleBox>
-          <MainTitle>TRISTAN CAILLAT</MainTitle>
+          <MainTitle>Tristan Caillat</MainTitle>
           <StyledHr></StyledHr>
           <MainTitleSubtext>Artisan pâtissier sur Nice et ses environs</MainTitleSubtext>   
         </TitleBox>
