@@ -26,7 +26,6 @@ const Column = styled.div`
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-right: 25px;
 `;
  
 const Row = styled.div`
@@ -38,14 +37,18 @@ const Row = styled.div`
 `;
 
 const StyledFooterTitle = styled.h3`
-    font-size: 30px;
-    margin-top: 30px;
+    font-size: 45px;
+    font-family: 'Alex Brush', cursive;
     text-align: center;
+    margin-bottom: 15px;
 `
 
-const IconText = styled.p`
-    font-size: 20px;
-    text-align: center;
+const StyledHr = styled.hr`
+  width: 150px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #F3D7CA;
+  border: none;
 `
 
 const ContactIcons = styled.div`
@@ -53,7 +56,7 @@ const ContactIcons = styled.div`
     height: 4vh;
     font-size: 35px;
     color: #fff;
-    margin: 0px 0px 20px 0px;
+    margin: 30px 0px 30px 0px;
     &:hover {
         font-size: 40px;
     }
@@ -65,22 +68,20 @@ export default function Footer() {
             <StyledFooterTitle>
                 Me contacter
             </StyledFooterTitle>
+            <StyledHr></StyledHr>
             <FooterContainer>
                 <Row>
                     <Column>
-                        <IconText>Instagram</IconText>
                         <ContactIcons onClick={() => { window.location.href = InstagramUrl; } }>
                             <FaInstagram />
                         </ContactIcons>
                     </Column>
                     <Column>
-                        <IconText>TikTok</IconText>
                         <ContactIcons onClick={() => { window.location.href = TiktokUrl; } }>
                             <FaTiktok />
                         </ContactIcons>
                     </Column>
                     <Column>
-                        <IconText>Mail</IconText>
                         <ContactIcons>
                             <IoMdMail onClick={() => { window.location.href = 'mailto:triss.caillat@gmail.com' } } />
                         </ContactIcons>

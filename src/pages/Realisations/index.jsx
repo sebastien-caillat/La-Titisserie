@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import classicdessert from "../../assets/data/classicdessert.json";
+import numbercakes from "../../assets/data/numbercakes.json";
+import layercakes from "../../assets/data/layercakes.json";
 
 const GlobalContainer = styled.div`
     width: 100%;
@@ -66,6 +69,45 @@ const MainTitleSubtext = styled.p`
   text-align: center;
 `
 
+const GlobalDessertSection = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`
+const DessertItem = styled.div`
+  width: 400px;
+  height: 400px;
+  background-color: #F5EEE6;
+  border-radius: 30px;
+  margin-bottom: 3%;
+`
+
+const DessertItemImg = styled.div`
+  width: 100%;
+  height: 60%;
+  background-color: #252525;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  object-fit: cover;
+`
+
+const DessertItemInfos = styled.div`
+  margin: 0% 3% 0% 3%;
+`
+
+const DessertItemTitle = styled.h3`
+  font-family: "Alex Brush", cursive;
+  font-size: 28px;
+  margin-bottom: -10px;
+`
+
+const classicDesserts = classicdessert;
+const numberCakes = numbercakes;
+const layerCakes = layercakes;
+
+
 export default function Realisations() {
     return(
         <GlobalContainer>
@@ -80,9 +122,41 @@ export default function Realisations() {
 
             <MainContainer>
             <h2>Les Classiques</h2>
-            <h2>Les Entremêts</h2>
-            <h2>Les Layers Cakes</h2>
+              <GlobalDessertSection>
+                {classicDesserts.map(({ id, title, picture, description }) => (
+                  <DessertItem key={id}>
+                    <DessertItemImg src={picture} alt={title} />
+                    <DessertItemInfos>
+                      <DessertItemTitle>{title}</DessertItemTitle>
+                      <p>{description}</p>
+                    </DessertItemInfos>
+                  </DessertItem>
+                ))}
+              </GlobalDessertSection>
             <h2>Les Numbers Cakes</h2>
+              <GlobalDessertSection>
+                {numberCakes.map(({ id, title, picture, description }) => (
+                  <DessertItem key={id}>
+                  <DessertItemImg src={picture} alt={title} />
+                    <DessertItemInfos>
+                      <DessertItemTitle>{title}</DessertItemTitle>
+                      <p>{description}</p>
+                    </DessertItemInfos>
+                  </DessertItem>
+                ))}
+              </GlobalDessertSection>
+            <h2>Les Layers Cakes</h2>
+              <GlobalDessertSection>
+                {layerCakes.map(({ id, title, picture, description }) => (
+                  <DessertItem key={id}>
+                  <DessertItemImg src={picture} alt={title} />
+                    <DessertItemInfos>
+                      <DessertItemTitle>{title}</DessertItemTitle>
+                      <p>{description}</p>
+                    </DessertItemInfos>
+                  </DessertItem>
+                ))}
+              </GlobalDessertSection>
             </MainContainer>
         </GlobalContainer>
     )
