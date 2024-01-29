@@ -11,6 +11,12 @@ const GlobalContainer = styled.div`
 const MainContainer = styled.div`
     height: auto;
     margin: 6% 5% 6% 5%;
+    @media(max-width: 1280px) {
+      margin-top: 15%;
+    }
+    @media(max-width: 768px) {
+      margin-top: 30%;
+    }
 `
 
 const RealisationBanner = styled.img`
@@ -19,6 +25,14 @@ const RealisationBanner = styled.img`
     object-fit: cover;
     object-position: 35% 35%;
     margin-top: -40px;
+    @media(max-width: 1280px) {
+      height: 350px;
+      margin-top: 35px;
+    }
+    @media(max-width: 768px) {
+      height: 200px;
+      margin-top: 110px;
+    }
 `
 
 const TitleCenter = styled.div`
@@ -36,8 +50,12 @@ const TitleBox = styled.div`
   flex-direction: column;
   background-color: #F5EEE6;
   border-radius: 10px;
+  @media(max-width: 1280px) {
+    top: 485px;
+  }
   @media(max-width: 768px) {
     width: 90%;
+    top: 400px;
   }
 `
 
@@ -69,19 +87,59 @@ const MainTitleSubtext = styled.p`
   text-align: center;
 `
 
+const CategoryTitle = styled.h2`
+  @media(max-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
+`
+
 const GlobalDessertSection = styled.div`
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media(max-width: 1280px) {
+    justify-content: center;
+  }
 `
+
+// A modifier lorsque plus de Numbers Cake seront introduits (remplacer par GlobalDessert Section et Item)
+
+const GlobalNumbersCakeSection = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  @media(max-width: 1280px) {
+    justify-content: center;
+  }
+`
+
+const NumbersCakeItem = styled.div`
+  width: 400px;
+  height: 400px;
+  background-color: #F5EEE6;
+  border-radius: 30px;
+  margin-bottom: 3%;
+  margin-right: 2.5%;
+  @media(max-width: 1280px) {
+    margin-right: 0%;
+    margin-bottom: 8%;
+  }
+`
+
 const DessertItem = styled.div`
   width: 400px;
   height: 400px;
   background-color: #F5EEE6;
   border-radius: 30px;
   margin-bottom: 3%;
+  @media(max-width: 1280px) {
+    margin-bottom: 8%;
+  }
 `
 
 const DessertItemImg = styled.div`
@@ -101,7 +159,17 @@ const DessertItemTitle = styled.h3`
   font-family: "Alex Brush", cursive;
   font-size: 28px;
   margin-bottom: -10px;
+  @media(max-width: 768px) {
+    font-size: 23px;
+  }
 `
+
+const DessertItemSubtext = styled.p`
+  @media(max-width: 768px) {
+    font-size: 16px;
+  }
+`
+
 
 const classicDesserts = classicdessert;
 const numberCakes = numbercakes;
@@ -121,38 +189,38 @@ export default function Realisations() {
             </TitleCenter>
 
             <MainContainer>
-            <h2>Les Classiques</h2>
+            <CategoryTitle>Les Classiques</CategoryTitle>
               <GlobalDessertSection>
                 {classicDesserts.map(({ id, title, picture, description }) => (
                   <DessertItem key={id}>
                     <DessertItemImg src={picture} alt={title} />
                     <DessertItemInfos>
                       <DessertItemTitle>{title}</DessertItemTitle>
-                      <p>{description}</p>
+                      <DessertItemSubtext>{description}</DessertItemSubtext>
                     </DessertItemInfos>
                   </DessertItem>
                 ))}
               </GlobalDessertSection>
-            <h2>Les Numbers Cakes</h2>
-              <GlobalDessertSection>
+            <CategoryTitle>Les Numbers Cakes</CategoryTitle>
+              <GlobalNumbersCakeSection>
                 {numberCakes.map(({ id, title, picture, description }) => (
-                  <DessertItem key={id}>
+                  <NumbersCakeItem key={id}>
                   <DessertItemImg src={picture} alt={title} />
                     <DessertItemInfos>
                       <DessertItemTitle>{title}</DessertItemTitle>
-                      <p>{description}</p>
+                      <DessertItemSubtext>{description}</DessertItemSubtext>
                     </DessertItemInfos>
-                  </DessertItem>
+                  </NumbersCakeItem>
                 ))}
-              </GlobalDessertSection>
-            <h2>Les Layers Cakes</h2>
+              </GlobalNumbersCakeSection>
+            <CategoryTitle>Les Layers Cakes</CategoryTitle>
               <GlobalDessertSection>
                 {layerCakes.map(({ id, title, picture, description }) => (
                   <DessertItem key={id}>
                   <DessertItemImg src={picture} alt={title} />
                     <DessertItemInfos>
                       <DessertItemTitle>{title}</DessertItemTitle>
-                      <p>{description}</p>
+                      <DessertItemSubtext>{description}</DessertItemSubtext>
                     </DessertItemInfos>
                   </DessertItem>
                 ))}

@@ -127,6 +127,10 @@ const HowToOrderBox = styled.div`
   }
 `
 
+const BoxTitle = styled.h2`
+  text-align: center;
+`
+
 const YoutubeVideo = styled.div`
   width: 30%;
   @media(max-width: 1280px) {
@@ -185,14 +189,14 @@ export default function Home() {
       <InfosContainer>
 
         <PresentationBox>
-          <h2>Qui-suis-je ?</h2>
+          <BoxTitle>Qui-suis-je ?</BoxTitle>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </PresentationBox>
         <YoutubeVideo>
         <YoutubeEmbed embedId="-HtBhn-XSxw?si=ytNNl_3ZRJ06Cd9y" />
         </YoutubeVideo>       
         <HowToOrderBox>
-          <h2>Passer commande</h2>
+          <BoxTitle>Passer commande</BoxTitle>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </HowToOrderBox>
 
