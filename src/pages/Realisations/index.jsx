@@ -125,9 +125,12 @@ const NumbersCakeItem = styled.div`
   border-radius: 30px;
   margin-bottom: 3%;
   margin-right: 2.5%;
+  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
-    margin-right: 0%;
-    margin-bottom: 8%;
+    margin:  0% 2% 8% 2%; 
+  }
+  @media(max-width: 768px) {
+    margin: 0% 0% 8% 0%;
   }
 `
 
@@ -137,12 +140,16 @@ const DessertItem = styled.div`
   background-color: #F5EEE6;
   border-radius: 30px;
   margin-bottom: 3%;
+  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
-    margin-bottom: 8%;
+    margin:  0% 2% 8% 2%; 
+  }
+  @media(max-width: 768px) {
+    margin: 0% 0% 8% 0%;
   }
 `
 
-const DessertItemImg = styled.div`
+const DessertItemImg = styled.img`
   width: 100%;
   height: 60%;
   background-color: #252525;
@@ -184,7 +191,7 @@ export default function Realisations() {
                 <TitleBox>
                     <MainTitle>Mes réalisations</MainTitle>
                     <StyledHr></StyledHr>
-                    <MainTitleSubtext>Diverses et variées</MainTitleSubtext>
+                    <MainTitleSubtext>Diverses & variées</MainTitleSubtext>
                 </TitleBox>
             </TitleCenter>
 
