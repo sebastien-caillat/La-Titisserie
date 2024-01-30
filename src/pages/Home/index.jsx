@@ -95,11 +95,12 @@ const PresentationBox = styled.div`
   background-color: #F5EEE6;
   border-radius: 25px;
   margin-left: 5%;
-  padding: 1%;
+  padding: 2% 1% 2% 1%;
   box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     width: 80%;
     margin: 0% 0% 10% 0%;
+    padding: 2%;
   }
   @media(max-width: 768px) {
     width: 90%;
@@ -119,6 +120,7 @@ const HowToOrderBox = styled.div`
   @media(max-width: 1280px) {
     width: 80%;
     margin: 10% 0% 0% 0%;
+    padding: 2%;
   }
   @media(max-width: 768px) {
     width: 90%;
@@ -129,6 +131,11 @@ const HowToOrderBox = styled.div`
 
 const BoxTitle = styled.h2`
   text-align: center;
+`
+
+const BoxText = styled.p`
+  text-align: justify;
+  text-indent: 8%;
 `
 
 const YoutubeVideo = styled.div`
@@ -190,14 +197,19 @@ export default function Home() {
 
         <PresentationBox>
           <BoxTitle>Qui-suis-je ?</BoxTitle>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <BoxText>Je m’appelle Tristan et depuis petit j’ai toujours été attiré par la cuisine. C’est à 15 ans, lors d’un stage en entreprise, que j’ai découvert la pâtisserie. Dès lors, cela a été plus qu’une évidence pour moi.</BoxText>
+          <BoxText>J’y ai découvert un univers où je pouvais laisser libre court à mon imagination et ai rapidement obtenu mon C.A.P Pâtissier/Chocolatier, puis je suis entré dans la vie active.</BoxText>
+          <BoxText>Cela fait maintenant plus de 12 ans que j’exerce ce métier avec passion, cherchant sans cesse à me réinventer et à perfectionner mes créations.</BoxText>
         </PresentationBox>
         <YoutubeVideo>
         <YoutubeEmbed embedId="-HtBhn-XSxw?si=ytNNl_3ZRJ06Cd9y" />
         </YoutubeVideo>       
         <HowToOrderBox>
           <BoxTitle>Passer commande</BoxTitle>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <BoxText>Je souhaite désormais redonner une définition à la pâtisserie en créant, pour vous, des gâteaux singuliers qui reflèteront vos envies et vos goûts.</BoxText> 
+          <BoxText>Grâce à ma maîtrise, je vous offrirai une expérience unique alliant plaisir gustatif et un visuel remarquable.</BoxText> 
+          <BoxText>À présent, c’est à vous de laisser parler votre imagination, et mon talent se chargera d’en faire une réalité.</BoxText>
+          <BoxText>Pour me contacter, un clic sur les icônes présentes en bas de page vous renverra vers mes différents réseaux sociaux</BoxText>
         </HowToOrderBox>
 
       </InfosContainer>

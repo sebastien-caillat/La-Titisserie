@@ -26,7 +26,7 @@ const StyledGlobalStyle = createGlobalStyle`
 
     p {
         font-size: 18px;
-        text-align: justify;
+        // text-align: justify;
     }
 `
 

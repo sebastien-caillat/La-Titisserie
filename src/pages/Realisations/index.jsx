@@ -160,6 +160,7 @@ const DessertItemImg = styled.img`
 
 const DessertItemInfos = styled.div`
   margin: 0% 3% 0% 3%;
+  word-wrap: break-all;
 `
 
 const DessertItemTitle = styled.h3`
@@ -168,10 +169,13 @@ const DessertItemTitle = styled.h3`
   margin-bottom: -10px;
   @media(max-width: 768px) {
     font-size: 23px;
+    margin-bottom: -5px;
   }
 `
 
 const DessertItemSubtext = styled.p`
+  line-height: 130%;
+  text-align: left;
   @media(max-width: 768px) {
     font-size: 16px;
   }
