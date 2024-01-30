@@ -83,7 +83,7 @@ export default function Footer() {
                     </Column>
                     <Column>
                         <ContactIcons>
-                            <IoMdMail onClick={() => { window.location.href = 'mailto:triss.caillat@gmail.com' } } />
+                            <IoMdMail onClick={() => { window.location.href = 'mailto:tris.caillat@gmail.com' } } />
                         </ContactIcons>
                     </Column>
                 </Row>
