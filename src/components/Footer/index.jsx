@@ -59,6 +59,7 @@ const ContactIcons = styled.div`
     margin: 30px 0px 30px 0px;
     &:hover {
         font-size: 40px;
+        cursor: pointer;
     }
 `;
 

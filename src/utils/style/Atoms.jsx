@@ -6,6 +6,7 @@ export const StyledLink = styled(Link)`
     font-size: 22px;
     margin: 0px 0px 0px 80px;
     text-decoration: none;
+    color: ${colors.primary};
     @media(max-width: 768px) {
         margin: 0px 0px 25px 0px;
     }
