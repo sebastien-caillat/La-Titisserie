@@ -5,83 +5,83 @@
        "picture": [
             "https://i.ibb.co/hLcTyVs/for-t-noire-revisit-e-fruits-rouges.jpg"
        ],
-       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+       "description": "Biscuit chocolat, chantilly chocolat & fruits rouges frais"
     },
 
     {
         "id": "a254fsd9",
         "title": "Mille-feuille",
         "picture": "https://i.ibb.co/6ZGKt4y/millefeuille-1.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Crème patissière vanille, feuilletage & glaçage"
     },
 
     {
         "id": "b384fkr9",
         "title": "Paris-Brest",
         "picture": "https://i.ibb.co/dkSSyfs/paris-brest-2.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Pâte à choux & crème mousseline praliné amandes et noisettes"
     },
 
     {
         "id":"d456ghi7", 
         "title": "Tartelette au citron meringuée",
         "picture": "https://i.ibb.co/6RBfntB/tartelette-citron-meringu.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Pâte sucrée nature, crème citron & meringue italienne légèrement brûlée"
     },
 
     {
         "id": "h956nmm4",
         "title": "Entremêts chocolat blanc & framboise",
         "picture": "https://i.ibb.co/WvsJ5Jj/entrem-ts-chocolat-blanc-framboise.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."       
+        "description": "Biscuit génoise, mousse au chocolat blanc & framboises fraîches"       
     },
 
     {
         "id": "v095rst5",
-        "title": "Entremêts Coeurs à la framboise",
+        "title": "Entremêts Coeurs au chocolat",
         "picture": "https://i.ibb.co/zfhPbQX/entrem-ts-coeurs.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Mousse aux 3 chocolats, glaçage miroir et finition velour"
     },
 
     {
         "id": "m123abc6",
         "title": "Heart Cake façon framboisier",
         "picture": "https://i.ibb.co/d7nXDFc/heart-cake-framboisier.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Biscuit génoise, crème mousseline vanille, framboises fraîches & couverture en pâte d'amandes"
     },
 
     {
         "id": "y453fde8",
         "title": "Heart Cake aux framboises fraîches",
         "picture": "https://i.ibb.co/5vzK72d/heart-cake-mousse-framboise.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Biscuit génoise, mousse à la framboise, framboises fraîches & sa chantilly"
     },
 
     {
         "id": "u987iop9",
         "title": "Tarte à la framboise",
         "picture": "https://i.ibb.co/X7MJVtW/tarte-framboise-2.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Pâte sucrée, crème d'amandes, crème légère & framboises"
     },
 
     {
         "id": "o567ghj0",
         "title": "Tarte multifruits",
         "picture": "https://i.ibb.co/bPnqGpT/tarte-multifruits.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Pâte sucrée, crème d'amandes, crème légère, kiwi, framboises, fraises, clémentine, ananas, pommes, mûres & myrtilles"
     },
 
     {
         "id": "h123ijkl",
         "title": "Mousse au chocolat",
         "picture": "https://i.ibb.co/T12Gtzv/mousse-chocolat.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Mousse au chocolat sur un fond croustillant de feuilletine"
     },
 
     {
         "id": "o751fdk2",
         "title": "Petits soleils au citron",
         "picture": "https://i.ibb.co/zFSqfMH/petit-soleil.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Biscuit et mousse légère au citron, meringue française & glaçage miroir"
     }
 ]

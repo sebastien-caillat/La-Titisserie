@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+// Carousel inactif pour le moment, en attente d'images de meilleures qualités à implémenter
+
 const StyledCarouselItem = styled.div`
     display: inline-flex;
     align-items: center;

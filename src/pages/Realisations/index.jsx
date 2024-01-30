@@ -186,7 +186,7 @@ const layerCakes = layercakes;
 export default function Realisations() {
     return(
         <GlobalContainer>
-            <RealisationBanner src="https://i.ibb.co/db87T32/layer-cake-2.jpg" />
+            <RealisationBanner src="https://i.ibb.co/db87T32/layer-cake-2.jpg" alt="layer-cake-banner" />
             <TitleCenter>
                 <TitleBox>
                     <MainTitle>Mes réalisations</MainTitle>
