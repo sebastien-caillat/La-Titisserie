@@ -5,12 +5,12 @@ import colors from '../../utils/style/colors';
 
 const GlobalContainer = styled.div`
     width: 100%;
-    height: 600px;
+    height: 800px;
 `
 const ErrorDiv = styled.div`
     display: flex;
     height: 100%;
-    margin: -0% 5% 0% 5%;
+    margin: 0% 5% 0% 5%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -18,8 +18,9 @@ const ErrorDiv = styled.div`
 
 const ErrorText = styled.p`
     font-size: 100px;
-    position: absolute;
-    top: 225px;
+    @media(max-width: 768px) {
+        font-size: 50px;
+    }
 `
 
 const StyledHr = styled.hr`
@@ -28,17 +29,24 @@ const StyledHr = styled.hr`
   border-radius: 10px;
   background-color: #E6A4B4;
   border: none;
+  margin-top: -70px;
+  @media(max-width: 768px) {
+    margin-top: -30px;
+}
 `
 
 const StyledHomeLink = styled(Link)`
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
     text-decoration: none;
     &:visited {
         color: ${colors.primary};
     }
     &:hover {
         text-decoration: underline;
+    }
+    @media(max-width: 768px) {
+        margin-top: 20px;
     }
 `
 
