@@ -125,7 +125,6 @@ const NumbersCakeItem = styled.div`
   border-radius: 30px;
   margin-bottom: 3%;
   margin-right: 2.5%;
-  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     margin:  0% 2% 8% 2%; 
   }
@@ -140,7 +139,7 @@ const DessertItem = styled.div`
   background-color: #F5EEE6;
   border-radius: 30px;
   margin-bottom: 3%;
-  box-shadow: 12px 12px 2px 1px #E6A4B4;
+  // animation: desserts-apparition 1000ms ease-in-out forwards;
   @media(max-width: 1280px) {
     margin:  0% 2% 8% 2%; 
   }
@@ -181,11 +180,19 @@ const DessertItemSubtext = styled.p`
   }
 `
 
+// @keyframes desserts-apparition {
+//   0% {
+//     transform: translateY(-20px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//     opacity: 1;
+//   }
+// }
 
 const classicDesserts = classicdessert;
 const numberCakes = numbercakes;
 const layerCakes = layercakes;
-
 
 export default function Realisations() {
     return(

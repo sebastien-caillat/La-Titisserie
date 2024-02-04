@@ -96,7 +96,6 @@ const PresentationBox = styled.div`
   border-radius: 25px;
   margin-left: 5%;
   padding: 2% 1% 2% 1%;
-  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     width: 80%;
     margin: 0% 0% 10% 0%;
@@ -116,7 +115,6 @@ const HowToOrderBox = styled.div`
   border-radius: 25px;
   margin-right: 5%;
   padding: 1%;
-  box-shadow: 12px 12px 2px 1px #E6A4B4;
   @media(max-width: 1280px) {
     width: 80%;
     margin: 10% 0% 0% 0%;
@@ -150,24 +148,24 @@ const YoutubeVideo = styled.div`
 
 const illustrations = [
   {
-      imgUrl: "https://i.ibb.co/zfhPbQX/entrem-ts-coeurs.jpg",
+      imgUrl: "https://i.ibb.co/XyMqs4B/entrem-ts-coeurs.webp",
       title: "Entremêts_coeurs"
-  },
+  }
 
-  {
-      imgUrl: "https://i.ibb.co/LRBjndX/maisonnette-pate-sucr-e.jpg",
-      title: "Maisonnette en pâte sucrée"
-  },
+  // {
+  //     imgUrl: "https://i.ibb.co/LRBjndX/maisonnette-pate-sucr-e.jpg",
+  //     title: "Maisonnette en pâte sucrée"
+  // },
 
-  {
-      imgUrl: "https://i.ibb.co/VLwkmr4/tartelette-citron-meringu.jpg",
-      title: "Tartelettes citron meringuées"
-  },
+  // {
+  //     imgUrl: "https://i.ibb.co/VLwkmr4/tartelette-citron-meringu.jpg",
+  //     title: "Tartelettes citron meringuées"
+  // },
 
-  {
-      imgUrl: "https://i.ibb.co/Jpq5wr4/meringues.jpg",
-      title: "Meringues"
-  },
+  // {
+  //     imgUrl: "https://i.ibb.co/Jpq5wr4/meringues.jpg",
+  //     title: "Meringues"
+  // },
  
 ]
 

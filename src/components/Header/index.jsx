@@ -17,6 +17,7 @@ import { StyledLink } from '../../utils/style/Atoms';
     const LogoTitle = styled.p`
         font-family: 'Alex Brush', cursive;
         font-size: 55px;
+        cursor: pointer;
     `
 
     const NavBar = styled.nav`
@@ -37,7 +38,7 @@ import { StyledLink } from '../../utils/style/Atoms';
 export default function Header() {
     return(
         <HeaderContainer>
-            <LogoTitle>La Titisserie</LogoTitle> 
+            <LogoTitle to="/">La Titisserie</LogoTitle> 
             <NavBar>
                 <StyledLink to="/">ACCUEIL</StyledLink>
                 <StyledLink to="realisations">REALISATIONS</StyledLink>
