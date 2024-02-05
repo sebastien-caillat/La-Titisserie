@@ -148,7 +148,7 @@ const YoutubeVideo = styled.div`
 
 const illustrations = [
   {
-      imgUrl: "https://i.ibb.co/XyMqs4B/entrem-ts-coeurs.webp",
+      imgUrl: "https://i.ibb.co/1dktNvg/entrem-ts-coeurs.webp",
       title: "Entremêts_coeurs"
   }
 
