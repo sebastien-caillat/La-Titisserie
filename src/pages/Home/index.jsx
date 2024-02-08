@@ -6,8 +6,8 @@ import Carousel from "../../components/Carousel";
 import { CarouselItem } from "../../components/Carousel";
 import { YoutubeEmbed } from '../../assets/YoutubeEmbed';
 
-import heartbanner from "../../assets/banner/heartbanner.webp";
-import mobileheartbanner from "../../assets/banner/mobileheartbanner.webp";
+import heartbanner from "../../assets/banner/heartbanner.avif";
+import mobileheartbanner from "../../assets/banner/mobileheartbanner.avif";
 
 const GlobalContainer = styled.div`
   width: 100%;
