@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 
 import Carousel from "../../components/Carousel";
-
 import { CarouselItem } from "../../components/Carousel";
-import { YoutubeEmbed } from '../../assets/YoutubeEmbed';
+
+import youtube_play_dark from "../../assets/youtube/youtube_play_dark.svg";
+import youtube_play_red from "../../assets/youtube/youtube_play_red.svg";
 
 const GlobalContainer = styled.div`
   width: 100%;
@@ -139,8 +140,22 @@ const BoxText = styled.p`
   text-indent: 8%;
 `
 
-const YoutubeVideo = styled.div`
+
+// Youtube Video related elements //
+
+const Video = styled.div`
+  position: relative;
   width: 30%;
+`
+
+const YoutubeVideo = styled.div`
+  padding-bottom: 56.23%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+  background-color: black;
   @media(max-width: 1280px) {
     width: 80%;
   }
@@ -149,7 +164,54 @@ const YoutubeVideo = styled.div`
   }
 `
 
+const VideoIframe= styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`
+
+const VideoPlaceHolder = styled.img`
+  width: 100%;
+  position: absolute;
+`
+
+const VideoButton = styled.button`
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-indent: -9999px;
+  top: 0;
+  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+  &:before {
+    width:100%;
+    height:100%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(${youtube_play_dark}) no-repeat center center;
+    background-size: 15%; 
+  }
+  &:hover:before {
+    background: url(${youtube_play_red}) no-repeat center center;
+    background-size: 15%; 
+  }
+`
+
 export default function Home() {
+
+  const [reading, setReading] = useState(false);
+  const toggle = () => {
+    setReading(!reading);
+  };
+
   return(
     <GlobalContainer>
 
@@ -177,9 +239,17 @@ export default function Home() {
           <BoxText>J’y ai découvert un univers où je pouvais laisser libre court à mon imagination et ai rapidement obtenu mon C.A.P Pâtissier/Chocolatier, puis je suis entré dans la vie active.</BoxText>
           <BoxText>Cela fait maintenant plus de 12 ans que j’exerce ce métier avec passion, cherchant sans cesse à me réinventer et à perfectionner mes créations.</BoxText>
         </PresentationBox>
-        <YoutubeVideo>
-        <YoutubeEmbed embedId="-HtBhn-XSxw?si=ytNNl_3ZRJ06Cd9y" />
-        </YoutubeVideo>       
+
+        <Video>
+            <YoutubeVideo class="video__youtube" data-youtube>
+                <VideoPlaceHolder src="https://i.ytimg.com/vi/-HtBhn-XSxw/maxresdefault.jpg" />
+                <VideoButton data-youtube-button="https://www.youtube.com/embed/-HtBhn-XSxw?si=idOWlRJpINw9VtIw" onClick={toggle}></VideoButton>
+                {reading &&
+                  <VideoIframe src="https://www.youtube.com/embed/-HtBhn-XSxw?si=idOWlRJpINw9VtIw?autoplay=1" frameborder="0" allowfullscreen></VideoIframe>
+                }
+            </YoutubeVideo>
+        </Video>
+
         <HowToOrderBox>
           <BoxTitle>Passer commande</BoxTitle>
           <BoxText>Je souhaite désormais redonner une définition à la pâtisserie en créant, pour vous, des gâteaux singuliers qui reflèteront vos envies et vos goûts.</BoxText> 
