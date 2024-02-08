@@ -146,6 +146,12 @@ const BoxText = styled.p`
 const Video = styled.div`
   position: relative;
   width: 30%;
+  @media(max-width: 1280px) {
+    width: 80%;
+  }
+  @media(max-width: 768px) {
+    width: 90%;
+  }
 `
 
 const YoutubeVideo = styled.div`
@@ -156,12 +162,6 @@ const YoutubeVideo = styled.div`
   position: relative;
   object-fit: cover;
   background-color: black;
-  @media(max-width: 1280px) {
-    width: 80%;
-  }
-  @media(max-width: 768px) {
-    width: 90%;
-  }
 `
 
 const VideoIframe= styled.iframe`
@@ -241,9 +241,9 @@ export default function Home() {
         </PresentationBox>
 
         <Video>
-            <YoutubeVideo class="video__youtube" data-youtube>
-                <VideoPlaceHolder src="https://i.ytimg.com/vi/-HtBhn-XSxw/maxresdefault.jpg" />
-                <VideoButton data-youtube-button="https://www.youtube.com/embed/-HtBhn-XSxw?si=idOWlRJpINw9VtIw" onClick={toggle}></VideoButton>
+            <YoutubeVideo>
+                <VideoPlaceHolder src="https://i.ytimg.com/vi/-HtBhn-XSxw/maxresdefault.jpg" alt="Miniature de la vidéo youtube" />
+                <VideoButton id="display_button" aria-label="Display video" data-youtube-button="https://www.youtube.com/embed/-HtBhn-XSxw?si=idOWlRJpINw9VtIw" onClick={toggle}></VideoButton>
                 {reading &&
                   <VideoIframe src="https://www.youtube.com/embed/-HtBhn-XSxw?si=idOWlRJpINw9VtIw?autoplay=1" frameborder="0" allowfullscreen></VideoIframe>
                 }
