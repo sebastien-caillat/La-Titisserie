@@ -6,9 +6,6 @@ import Carousel from "../../components/Carousel";
 import { CarouselItem } from "../../components/Carousel";
 import { YoutubeEmbed } from '../../assets/YoutubeEmbed';
 
-import heartbanner from "../../assets/banner/heartbanner.avif";
-import mobileheartbanner from "../../assets/banner/mobileheartbanner.avif";
-
 const GlobalContainer = styled.div`
   width: 100%;
 `
@@ -19,7 +16,7 @@ const StyledCarouselItemImg = styled.img`
     justify-content: center;
     height: 500px;
     width: 100%;
-    background-image: url(${heartbanner});
+    background-image: url("https://i.ibb.co/KLgs8ff/entremets-coeurs.webp");
     background-size: cover;
     background-position: 50% 50%;
     @media(max-width: 1280px) {
@@ -27,7 +24,7 @@ const StyledCarouselItemImg = styled.img`
     }
     @media(max-width: 768px) {
       height: 200px;
-      background-image: url(${mobileheartbanner}); 
+      background-image: url("https://i.ibb.co/tqw00pp/entremets-coeurs-responsive.webp"); 
     }
 `
 
