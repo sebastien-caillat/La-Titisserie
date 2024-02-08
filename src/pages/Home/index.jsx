@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
+
 import Carousel from "../../components/Carousel";
+
 import { CarouselItem } from "../../components/Carousel";
 import { YoutubeEmbed } from '../../assets/YoutubeEmbed';
+
+import heartbanner from "../../assets/banner/heartbanner.webp";
+import mobileheartbanner from "../../assets/banner/mobileheartbanner.webp";
 
 const GlobalContainer = styled.div`
   width: 100%;
@@ -13,13 +18,16 @@ const StyledCarouselItemImg = styled.img`
     align-items: center;
     justify-content: center;
     height: 500px;
-    object-fit: cover;
     width: 100%;
+    background-image: url(${heartbanner});
+    background-size: cover;
+    background-position: 50% 50%;
     @media(max-width: 1280px) {
       height: 350px;
     }
     @media(max-width: 768px) {
       height: 200px;
+      background-image: url(${mobileheartbanner}); 
     }
 `
 
@@ -104,7 +112,6 @@ const PresentationBox = styled.div`
   @media(max-width: 768px) {
     width: 90%;
     border-radius: 15px;
-    box-shadow: 5px 5px 2px 1px #E6A4B4;
   }
 `
 
@@ -123,7 +130,6 @@ const HowToOrderBox = styled.div`
   @media(max-width: 768px) {
     width: 90%;
     border-radius: 15px;
-    box-shadow: 5px 5px 2px 1px #E6A4B4;
   }
 `
 
@@ -146,39 +152,14 @@ const YoutubeVideo = styled.div`
   }
 `
 
-const illustrations = [
-  {
-      imgUrl: "https://i.ibb.co/1dktNvg/entrem-ts-coeurs.webp",
-      title: "Entremêts_coeurs"
-  }
-
-  // {
-  //     imgUrl: "https://i.ibb.co/LRBjndX/maisonnette-pate-sucr-e.jpg",
-  //     title: "Maisonnette en pâte sucrée"
-  // },
-
-  // {
-  //     imgUrl: "https://i.ibb.co/VLwkmr4/tartelette-citron-meringu.jpg",
-  //     title: "Tartelettes citron meringuées"
-  // },
-
-  // {
-  //     imgUrl: "https://i.ibb.co/Jpq5wr4/meringues.jpg",
-  //     title: "Meringues"
-  // },
- 
-]
-
 export default function Home() {
   return(
     <GlobalContainer>
 
       <Carousel>
-        {illustrations.map(({imgUrl, title }) => (
           <CarouselItem>
-            <StyledCarouselItemImg src={imgUrl} alt={title} />
+            <StyledCarouselItemImg alt="" />
           </CarouselItem> 
-        ))}  
       </Carousel>
 
       <TitleCenter>
