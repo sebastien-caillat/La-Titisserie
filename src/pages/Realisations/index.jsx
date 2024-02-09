@@ -22,9 +22,10 @@ const MainContainer = styled.div`
 const RealisationBanner = styled.img`
     width: 100%;
     height: 500px;
-    object-fit: cover;
-    object-position: 35% 35%;
     margin-top: -40px;
+    background-image: url("https://i.ibb.co/D7PjrXv/layercakebanner.webp");
+    background-size: cover;
+    background-position: 35% 35%;
     @media(max-width: 1280px) {
       height: 350px;
       margin-top: 35px;
@@ -32,6 +33,7 @@ const RealisationBanner = styled.img`
     @media(max-width: 768px) {
       height: 200px;
       margin-top: 110px;
+      background-image: url("https://i.ibb.co/8zrpL7q/mobilelayercakebanner.webp");
     }
 `
 
@@ -197,7 +199,7 @@ const layerCakes = layercakes;
 export default function Realisations() {
     return(
         <GlobalContainer>
-            <RealisationBanner src="https://i.ibb.co/db87T32/layer-cake-2.jpg" alt="layer-cake-banner" />
+            <RealisationBanner />
             <TitleCenter>
                 <TitleBox>
                     <MainTitle>Mes réalisations</MainTitle>
