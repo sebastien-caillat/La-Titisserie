@@ -19,7 +19,7 @@ const MainContainer = styled.div`
     }
 `
 
-const RealisationBanner = styled.img`
+const RealisationBanner = styled.div`
     width: 100%;
     height: 500px;
     margin-top: -40px;

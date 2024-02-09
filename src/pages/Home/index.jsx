@@ -217,7 +217,7 @@ export default function Home() {
 
       <Carousel>
           <CarouselItem>
-            <StyledCarouselItemImg alt="" />
+            <StyledCarouselItemImg alt="heart banner" />
           </CarouselItem> 
       </Carousel>
 
