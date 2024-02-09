@@ -199,7 +199,7 @@ const layerCakes = layercakes;
 export default function Realisations() {
     return(
         <GlobalContainer>
-            <RealisationBanner />
+            <RealisationBanner alt="layer cake banner"/>
             <TitleCenter>
                 <TitleBox>
                     <MainTitle>Mes réalisations</MainTitle>
